@@ -12,19 +12,19 @@ Welcome to my personal portfolio website — a creative hub where I showcase my 
 
 ---
 
-## 📁 Features
+##  Features
 
-- 🖥️ **Landing Page:** Bold introduction with a glowing modern UI
-- 👤 **About Me:** A snapshot of who I am and my journey
-- 🎓 **Educational Background:** Academic achievements with elegant layout
-- 💡 **Interests:** A peek into my passion for tech innovation and rugby
-- 🛠️ **Projects:** Showcase of real-world applications I’ve built
-- 📞 **Contact Me:** Social links and personal contact form
-- 📄 **Downloadable CV:** One-click CV download button
+-  **Landing Page:** Bold introduction with a glowing modern UI
+-  **About Me:** A snapshot of who I am and my journey
+-  **Educational Background:** Academic achievements with elegant layout
+-  **Interests:** A peek into my passion for tech innovation and rugby
+-  **Projects:** Showcase of real-world applications I’ve built
+-  **Contact Me:** Social links and personal contact form
+-  **Downloadable CV:** One-click CV download button
 
 ---
 
-## 🛠️ Built With
+##  Built With
 
 - **HTML5 & CSS3** – Semantic structure and custom styling
 - **Google Fonts** – Sleek typography (`Poppins`)

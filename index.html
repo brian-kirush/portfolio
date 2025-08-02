@@ -1,16 +1,33 @@
+<!-- Define the document type and language -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Set character encoding -->
   <meta charset="UTF-8" />
+  
+  <!-- Make the page responsive on all devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Set the page title -->
   <title>Portfolio | Brian Ndwiga</title>
+
+  <!-- Link to your custom CSS stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Import Poppins font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Import Font Awesome icons for social media links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
+  <!-- ===== HEADER SECTION ===== -->
   <header>
-    <h2 class="logo">Portfolio.</h2>
+    <!-- Site logo or name -->
+    <h2 class="logo">Portfolio.💻</h2>
+
+    <!-- Navigation menu -->
     <nav class="navbar">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
@@ -21,19 +38,28 @@
     </nav>
   </header>
 
+  <!-- ===== HOME SECTION ===== -->
   <section class="home" id="home">
     <div class="content">
+      <!-- Intro text -->
       <h3>Hello, It's Me</h3>
       <h1>Brian Ndwiga</h1>
-      <h3>And I'm a <span class="highlight">fullstack Developer<span class="cursor">|</span></span></h3>
+
+      <!-- Highlighting roles -->
+      <h3>And I'm a <span class="highlight">fullstack Developer<br>Rugby player<span class="cursor">|</span></span></h3>
+
+      <!-- Bio paragraph -->
       <p>
-        Highly skilled and certified Computer Networking professional with expertise in Cisco
-technologies, network administration, and troubleshooting. Proficient in coding languages such
-as <strong>HTML, CSS, PHP, Rust, Kotlin and Python</strong>, with hands-on experience in web development and graphic
-design. Adept at managing work pressure, meeting deadlines, and collaborating in fast-paced
-environments.
+        Enthusiastic tech learner with a strong foundation in computer networking, web development, and graphic design.
+        Experienced in using <strong>HTML, CSS, PHP, Python, Rust, and Kotlin</strong> to build websites and solve real-world problems.
+        Comfortable working with Cisco tools, troubleshooting networks, and bringing creative ideas to life through graphic design.
+        Known for staying calm under pressure, meeting deadlines, and collaborating well in team settings.
       </p>
+
+      <!-- "More About Me" button -->
       <a href="about.html" class="btn">More About Me</a>
+
+      <!-- Social media links with icons -->
       <div class="socials">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -41,13 +67,65 @@ environments.
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
+
+    <!-- Profile image on the right side -->
     <div class="image">
-      <img src="images/brian.png" alt="Profile Image" class="profile-pic" />
+      <img src="images/roy.png" alt="Profile Image" class="profile-pic" />
     </div>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills-section">
+      <h2 class="section-title">Professional <span>Skills</span></h2>
+
+      <!-- Each skill with a label and progress bar -->
+      <div class="skill">
+        <label>Python</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 50%"></div></div>
+      </div>
+
+      <div class="skill">
+        <label>HTML</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 70%"></div></div>
+      </div>
+
+      <div class="skill">
+        <label>CSS</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <label>JavaScript</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 40%"></div></div>
+      </div>
+
+      <div class="skill">
+        <label>Kotlin</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 20%"></div></div>
+      </div>
+
+      <div class="skill">
+        <label>Rust</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 30%"></div></div>
+      </div>
+
+      <div class="skill">
+        <label>Computer Networking</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 60%"></div></div>
+      </div>
+
+      <div class="skill">
+        <label>Ethical Hacking</label>
+        <div class="skill-bar"><div class="bar-fill" style="width: 20%"></div></div>
+      </div>
+    </section>
   </section>
 
+  <!-- ===== FOOTER SECTION ===== -->
   <footer>
+    <!-- Copyright -->
     <p>&copy; 2025 Brian Ndwiga. All Rights Reserved.</p>
+
+    <!-- Footer social icons -->
     <div class="footer-socials">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>

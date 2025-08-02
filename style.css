@@ -1,10 +1,11 @@
+/* ========== GLOBAL RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* === HEADER FIXED === */
+/* ========== HEADER ========== */
 header {
   width: 100%;
   padding: 10px 30px;
@@ -26,7 +27,7 @@ header {
   flex-shrink: 0;
 }
 
-/* NAVBAR FIX */
+/* ========== NAVBAR ========== */
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +65,7 @@ header {
   bottom: -5px;
 }
 
-
+/* ========== BODY ========== */
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -74,20 +75,26 @@ body {
   min-height: 100vh;
 }
 
-/* === SECTIONS === */
+/* ========== PAGE SECTIONS ========== */
 section {
   padding: 140px 80px 60px;
 }
 
-/* === HOME PAGE === */
+/* ========== HOME SECTION ========== */
 .home {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
   background-color: #081b29;
+  background-image: url('https://i.pinimg.com/1200x/23/85/7a/23857ac1d2450fb3eb72b8c77048dbba.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay; /* Optional: helps blend with dark overlay */
 }
 
+/* Text content */
 .content {
   flex: 1;
   max-width: 600px;
@@ -100,6 +107,7 @@ section {
   margin-bottom: 20px;
 }
 
+/* Image container */
 .image {
   flex: 1;
   display: flex;
@@ -111,9 +119,22 @@ section {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px #00eeff66;
+  opacity: 0.8;
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease,
+    opacity 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
-/* === BUTTONS === */
+.profile-pic:hover {
+  filter: grayscale(0%) blur(0);
+  transform: scale(1.07);
+  opacity: 1;
+  box-shadow: 0 0 35px #00eeff, 0 0 60px #00eeff66;
+}
+
+/* ========== BUTTONS ========== */
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -134,7 +155,7 @@ section {
   box-shadow: 0 0 25px #00eeff;
 }
 
-/* === SOCIAL ICONS === */
+/* ========== SOCIAL ICONS ========== */
 .socials {
   margin-top: 25px;
   display: flex;
@@ -157,8 +178,13 @@ section {
   box-shadow: 0 0 20px #00eeff, 0 0 40px #00eeff66;
 }
 
-/* === ABOUT PAGE, EDUCATION, INTERESTS, PROJECTS === */
+/* ========== PAGE CONTENT BLOCKS ========== */
 .page-content {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
 .section-title {
   font-size: 36px;
   font-weight: 700;
@@ -167,70 +193,37 @@ section {
   text-align: center;
 }
 
-  max-width: 800px;
-  margin: auto;
+.skills-section .section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
   text-align: center;
+  color: #00ffcc;
 }
 
-.page-content p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #ccc;
-}
-
-/* === CONTACT PAGE === */
-.contact-form {
-  max-width: 600px;
-  margin: auto;
-  background: #0b2a3f;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #00eeff22;
-  text-align: left;
-}
-
-.contact-form label {
+.skill label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-weight: 600;
-  color: #00eeff;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-  margin-bottom: 16px;
-  background: #102d45;
   color: #fff;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #aaa;
-}
-
-.contact-form button {
-  background: #00eeff;
-  color: #081b29;
-  padding: 12px 28px;
-  border: none;
+.skill-bar {
+  width: 100%;
+  background-color: #1a1a1a;
   border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 0 15px #00eeff88;
+  overflow: hidden;
+  height: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 255, 200, 0.3);
 }
 
-.contact-form button:hover {
-  background: #fff;
-  color: #081b29;
-  box-shadow: 0 0 25px #00eeff;
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffcc, #0099ff);
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
 }
 
-/* === FOOTER === */
+/* ========== FOOTER ========== */
 footer {
   background: #081b29;
   color: #ccc;
@@ -268,17 +261,18 @@ footer p {
   box-shadow: 0 0 20px #00eeff, 0 0 40px #00eeff88;
 }
 
-/* === BLINKING CURSOR (optional) === */
+/* ========== CURSOR ANIMATION ========== */
 .cursor {
   animation: blink 1s step-start infinite;
 }
+
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
 
-/* === RESPONSIVE TWEAKS === */
+/* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 768px) {
   header {
     padding: 20px 30px;

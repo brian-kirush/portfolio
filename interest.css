@@ -1,3 +1,16 @@
+/* === GENERAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* === HEADER STYLING === */
 header {
   width: 100%;
   padding: 20px 80px;
@@ -45,62 +58,70 @@ header {
   left: 0;
   bottom: -5px;
 }
-/* === BODY RESET === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
+/* === INTERESTS PAGE === */
 .interests-page {
   padding: 140px 80px 60px;
-  background: #081b29;
-  color: #fff;
   min-height: 100vh;
+  background: linear-gradient(rgba(8, 27, 41, 0.95), rgba(8, 27, 41, 0.95)),
+              url('https://i.pinimg.com/736x/b6/76/dd/b676dda1a9cc77636602cdbda26e84f2.jpg') center/cover no-repeat;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 
-.interests-content {
-  max-width: 800px;
-  text-align: center;
-}
-
-.interests-page .section-title {
+.section-title {
   font-size: 36px;
   margin-bottom: 40px;
   color: #00eeff;
 }
 
-.interest-item {
-  margin-bottom: 30px;
+/* === INTERESTS GRID === */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.interest-item h3 {
+/* === GLASSMORPHIC INTEREST CARD === */
+.interest-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 238, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.interest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 238, 255, 0.3);
+}
+
+.interest-card .icon {
+  font-size: 40px;
+  color: #00eeff;
+  margin-bottom: 20px;
+}
+
+.interest-card h3 {
   font-size: 22px;
   color: #00eeff;
   margin-bottom: 10px;
 }
 
-.interest-item p {
-  font-size: 16px;
-  color: #ccc;
-}
-ooter {
-  background: #081b29;
-  color: #ccc;
-  text-align: center;
-  padding: 30px 20px;
-  border-top: 1px solid #00eeff33;
-  margin-top: 60px;
+.interest-card p {
+  font-size: 15px;
+  color: #eee;
 }
 
-footer p {
-  margin-bottom: 15px;
-  font-size: 14px;
-}
-}
+/* === FOOTER === */
 footer {
   background: #081b29;
   color: #ccc;

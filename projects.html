@@ -1,60 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares the document as an HTML5 document -->
+<html lang="en"> <!-- Sets the language to English -->
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Brian Ndwiga</title>
+  <!-- Makes the page responsive on all devices -->
+
+  <title>Projects | Brian Ndwiga</title> <!-- Browser tab title -->
+
+  <!-- Link to custom CSS file for styling this page -->
   <link rel="stylesheet" href="projects.css" />
+
+  <!-- Importing Poppins font from Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN for using social media and other icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
+  <!-- === HEADER SECTION === -->
   <header>
-    <h2 class="logo">Portfolio.</h2>
-    <nav class="navbar">
+    <h2 class="logo">Portfolio.</h2> <!-- Brand/Logo text -->
+
+    <nav class="navbar"> <!-- Navigation bar with links -->
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="education.html">Educational Background</a>
       <a href="interest.html">Interests</a>
-      <a href="projects.html" class="active">Projects</a>
+      <a href="projects.html" class="active">Projects</a> <!-- Active page link -->
       <a href="contact.html">Contact Me</a>
     </nav>
   </header>
 
+  <!-- === MAIN PROJECTS SECTION === -->
   <section class="projects-page">
     <div class="projects-content">
-      <h2 class="section-title">My <span>Projects</span></h2>
+      <h2 class="section-title">My recent <span>Projects</span></h2>
 
+      <!-- === PROJECT 1 === -->
       <div class="project-item">
+        <!-- Project image -->
+        <img src="images/transit.png" alt="Transit POS Screenshot" class="project-img" />
+
+        <!-- Project title -->
         <h3>🚌 Transit POS System</h3>
+
+        <!-- Project description -->
         <p>
           A smart POS system built for public transport. It uses NFC-enabled cards for passenger boarding and fare collection, linked to a cloud wallet via Supabase. Features include card registration, wallet top-ups via Mpesa, real-time fare deduction, role-based access (admin/staff), and printed receipts — all running on an Android-based POS terminal.
         </p>
       </div>
-      <div class="project-links">
-      <a href="https://preview--sparky-plasma-transit-flow.lovable.app/demo" class="btn">View Project</a>
-      <a href="https://github.com/brian-kirush/transit-pos-system.git" class="btn-outline">GitHub Repo</a>
-    </div>
 
+      <!-- Link to live demo -->
+      <div class="project-links">
+        <a href="https://preview--sparky-plasma-transit-flow.lovable.app/demo" class="btn">View Project</a>
+      </div>
+
+      <!-- === PROJECT 2 === -->
       <div class="project-item">
+        <img src="images/voltage.png" alt="Voltage Website Screenshot" class="project-img" />
         <h3>⚡ Voltage Website</h3>
         <p>
           A clean, responsive corporate website built for a tech agency. It includes animated hero sections, service cards, contact forms, and full mobile responsiveness. Developed using HTML, CSS, and vanilla JavaScript — deployed with blazing speed and performance in mind.
         </p>
       </div>
+
+      <!-- Link to live demo -->
       <div class="project-links">
-      <a href="https://preview--voltage-african-glow.lovable.app/" class="btn">View Project</a>
-      <a href="https://github.com/brian-kirush/voltage-african-glow.git" class="btn-outline">GitHub Repo</a>
-    </div>
+        <a href="https://preview--voltage-african-glow.lovable.app/" class="btn">View Project</a>
+      </div>
+
+      <!-- === PROJECT 3 === -->
+      <div class="project-item">
+        <img src="images/mobile.png" alt="Voltage Website Screenshot" class="project-img" />
+        <h3>📱 Mobile App</h3>
+        <p>
+          A clean, responsive corporate website built for a tech agency. It includes animated hero sections, service cards, contact forms, and full mobile responsiveness. Developed using HTML, CSS, and vanilla JavaScript — deployed with blazing speed and performance in mind.
+        </p>
+      </div>
+
+      <!-- (No live demo link for this one) -->
+      <div class="project-links">
+        <!-- Empty for now -->
+      </div>
     </div>
   </section>
+
+  <!-- === FOOTER SECTION === -->
   <footer>
-    <p>&copy; 2023 Brian Ndwiga. All rights reserved.</p>
+    <p>&copy; 2025 Brian Ndwiga. All rights reserved.</p>
+
+    <!-- Social media icons -->
     <div class="socials">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
       <a href="#"><i class="fab fa-linkedin-in"></i></a>
     </div>
+  </footer>
+
 </body>
 </html>
