@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0c1e2c;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background-color: #081b29;
+  border-bottom: 1px solid #00eeff33;
+}
+
+.logo {
+  font-size: 24px;
+  color: #00eeff;
+  font-weight: bold;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  color: #00eeff;
+}
+
+.timeline-section {
+  padding: 120px 40px 60px;
+  background: linear-gradient(rgba(8, 27, 41, 0.95), rgba(8, 27, 41, 0.95)),
+              url('https://i.pinimg.com/736x/cb/3c/ef/cb3cefbcba842dc7a34c0dfafcf38858.jpg') center/cover no-repeat;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.timeline-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #00eeff;
+  margin-bottom: 30px;
+  border-left: 4px solid #00eeff88;
+  padding-left: 12px;
+}
+
+.timeline-item {
+  background: #081b29;
+  border-left: 3px solid #00eeff88;
+  margin-bottom: 30px;
+  padding: 20px 20px 20px 40px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 0 12px #00eeff22;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px #00eeff44;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  background: #00eeff;
+  color: #081b29;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 14px;
+  box-shadow: 0 0 10px #00eeff;
+}
+
+.timeline-content .year {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 8px;
+  font-style: italic;
+  display: block;
+}
+
+.timeline-content h3 {
+  color: #00eeff;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.timeline-content p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #081b29;
+  border-top: 1px solid #00eeff33;
+  color: #aaa;
+}
+
+.footer-socials {
+  margin-top: 15px;
+}
+
+.footer-socials a {
+  color: #00eeff;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    margin-top: 10px;
+  }
+}

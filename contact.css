@@ -1,0 +1,190 @@
+/* === HEADER STYLES === */
+header {
+  width: 100%; /* Full width across the viewport */
+  padding: 20px 80px; /* Top-bottom: 20px, Left-right: 80px */
+  background: #081b29; /* Dark navy background */
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Vertically center items */
+  position: fixed; /* Stick to top of the page */
+  top: 0; /* Align to the top */
+  z-index: 1000; /* Ensure header stays above all other elements */
+  box-shadow: 0 4px 20px rgba(0, 238, 255, 0.15); /* Soft cyan shadow */
+}
+
+/* Logo Text */
+.logo {
+  color: #fff; /* White color */
+  font-size: 28px; /* Font size */
+  font-weight: 700; /* Bold text */
+}
+
+/* Navbar container */
+.navbar {
+  display: flex; /* Horizontal flex layout */
+  align-items: center; /* Vertically align nav items */
+}
+
+/* Navbar links */
+.navbar a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  margin-left: 25px; /* Space between links */
+  font-size: 16px;
+  transition: 0.3s ease; /* Smooth hover transition */
+  position: relative; /* To allow absolute positioning of ::after */
+}
+
+/* Active or hovered nav link */
+.navbar a:hover,
+.navbar a.active {
+  color: #00eeff; /* Cyan color when hovered or active */
+}
+
+/* Cyan underline for active nav link */
+.navbar a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #00eeff;
+  left: 0;
+  bottom: -5px;
+}
+
+/* === GLOBAL RESET === */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in total width/height */
+}
+
+
+/* === CONTACT PAGE SECTION === */
+.contact-page {
+  padding: 140px 80px 60px; /* Top padding accounts for fixed header */
+  background: linear-gradient(rgba(8, 27, 41, 0.9), rgba(8, 27, 41, 0.9)),
+              url('https://i.pinimg.com/736x/ca/a2/59/caa259fbf306f10af1229fca3dd7ca9f.jpg') no-repeat center center;
+  background-size: cover; /* Cover the entire container */
+  color: #fff; /* Default text color */
+  min-height: 100vh; /* Minimum full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Content wrapper inside the contact page */
+.contact-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Section title styling */
+.contact-page .section-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #00eeff;
+}
+
+/* Contact info styling */
+.contact-info p {
+  font-size: 18px;
+  color: #ccc; /* Light gray text */
+  margin: 10px 0;
+}
+
+/* Social media container */
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+}
+
+/* Social icon styles */
+.socials a {
+  color: #00eeff; /* Cyan default */
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.socials a:hover {
+  color: #fff;
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* === CONTACT FORM SECTION === */
+.contact-form {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Form title */
+.contact-form h3 {
+  font-size: 22px;
+  color: #00eeff;
+  margin-bottom: 20px;
+}
+
+/* Form layout: vertical stack */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between input fields */
+}
+
+/* Input and textarea styling */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: none; /* Prevent textarea from being resized manually */
+}
+
+/* Highlight input when focused */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #00eeff;
+}
+
+/* Submit button style */
+.contact-form .btn {
+  background: #00eeff;
+  color: #081b29;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px #00eeff;
+}
+
+/* Hover effect for submit button */
+.contact-form .btn:hover {
+  background: #fff;
+  color: #081b29;
+  box-shadow: 0 0 20px #00eeff;
+}
+
+
+/* === FOOTER SECTION === */
+footer {
+  background: #081b29;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid #00eeff33; /* Soft cyan border */
+  margin-top: 60px;
+}
+
+footer p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
