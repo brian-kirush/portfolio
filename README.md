@@ -3,9 +3,9 @@
 Welcome to my official developer portfolio  
 This is a personal website designed and built to showcase my background, skills, interests, and technical projects.
 
-Live Demo:[View Portfolio on Netlify](https://ndwigahportfolio.netlify.app/)  
+Live link:https://ndwigahportfolio.netlify.app  
 
-GitHub Repo:[github.com/brian-kirush/portfolio](https://github.com/brian-kirush/portfolio)
+GitHub Repo:https://github.com/brian-kirush/portfolio.git
 
 ---
 
