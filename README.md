@@ -28,7 +28,7 @@ This portfolio website serves as a digital resume and project showcase. It inclu
 Hi! I'm **Brian Ndwiga**, a passionate and self-driven web developer. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
 
 ###Educational Background
-- Degree: [e.g., BSc. in Computer Science or Hospitality Management]
+- Diploma: Computer Science
 - University: Zetech University
 -  Download My CV(./CV/BrianNdwiga_CV.pdf)
 
@@ -51,12 +51,12 @@ Hi! I'm **Brian Ndwiga**, a passionate and self-driven web developer. I enjoy tu
 Transit POS System
 A smart Android-based NFC POS system for public transport.  
 Built with: HTML, CSS, JavaScript, Supabase, Mpesa integration  
-Live Demo(https://preview--sparky-plasma-transit-flow.lovable.app/demo)
+Live Demo:https://preview--sparky-plasma-transit-flow.lovable.app/demo
 
 Voltage Website
 A modern agency website with animations, responsiveness, and clean code.  
 Built with: HTML, CSS, Vanilla JS  
-Live Demo(https://preview--voltage-african-glow.lovable.app/)
+Live Demo:https://preview--voltage-african-glow.lovable.app/
 
 Mobile App Site (UI Mockup)
 Landing page mockup for a mobile app concept with responsive design.  
